@@ -281,7 +281,7 @@ nav.sitenavigation li {
 }
 @media screen and (min-width:1400px){
   body{
-    width: 96%;
+    width: 85em;
     margin:auto;
   }
  
