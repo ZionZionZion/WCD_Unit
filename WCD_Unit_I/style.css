@@ -1,2 +1,295 @@
+/* 
+   Revisions Bookstore and Cafe style sheet 
+   Filename: styles.css
+
+   Author:   
+   Date:     
+   HTML5 and CSS3 Illustrated Unit I, Visual Workshop
+ */
+
+/* reset styles */
+html {
+   font-size: 17px;
+}
+a, article, body, div, footer, header, 
+h1, h2, h3, img, li, nav, p, ul {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   width: auto;
+}
+ul {
+   list-style-type: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+/* body and page container */
+body {
+   font-family: Verdana, Geneva, sans-serif;
+   background-color: rgb(253,245,230);
+}
+.container {
+   margin: 0 auto;
+   background-color: white;
+   position: relative;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   left: 0.4em;
+   top: 0.4em;
+   background-color: white;
+   color: black;
+}
+
+/* header section */
+header {
+   width: 98%;
+   min-height: 60px;
+   padding: 0 1%;
+   text-align: left;
+   background-color: #bdccd4;
+   font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
+   font-weight: 900;
+   overflow: auto;
+}
+header h1 {
+   margin-right: 65px;
+   font-size: 2.3em;
+}
+header div {
+   display: none;
+}
+header img {
+   margin: 0 auto;
+   display: block;
+}
+
+/* site navigation */
+
+nav.sitenavigation {
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 2;
+}
+nav.sitenavigation a:link {
+   text-decoration: none;
+   color: white;
+}
+nav.sitenavigation a:visited {
+   color: #bdccd4;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+   color: black;
+   background-color: white;
+}
+nav.sitenavigation a:active {
+   position: relative;
+   top: 1px;
+   left: 1px;
+}
+.navigation-menu-button img{
+  float: right;
+}
+
+.sitenavigation ul{
+   text-align: center;
+   display: none;
+   float: right;
+  }
+  .sitenavigation ul li{
+    background-color: black;
+   }
+
+
+/* main content */
+article {
+   width: 94%;
+   padding: 3%;
+   float: left;
+   background: #c69c6d;
+}
+article img{
+  display: none;
+}
+article div.container {
+   padding: 2%;
+   background-color: white;
+   overflow: auto;
+   box-shadow: 0 0 8px #333;
+} 
+
+article h2 {
+   margin-bottom: 0.4em;
+   font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
+   font-weight: 900;
+   font-size: 2em;
+}
+article p {
+   margin: 0 0 0.8em 1em;
+   font-size: 1.2em;
+}
+
+/* sidebar */
+aside {
+   font-size: 1.2em;
+   display: none;
+}
+aside p {
+   padding: 0.4em;
+   margin-bottom: 0.6em;
+   font-size: 1.1em;
+}
+
+/* footer section */
+footer {
+   padding: 0.5em;
+   clear: both;
+   text-align: right;
+   background-color: #bdccd4;
+}
+
+
+
+
+/* print styles */
+@media print {
+   body, h1, article, footer {
+      background-color: rgb(255,255,255);
+   }
+   body {
+      max-width: 100%;
+   }
+   nav {
+      display: none;
+   }
+   section {
+      padding-bottom: 4%;
+   }
+   .top-link {
+      display: none;
+   }
+}
+
+
+
+@media screen and (min-width:800px) {  /*1*/
+  header{
+    text-align: center;
+    overflow: auto;  
+  }
+ header h1 {
+    font-size: 2.4em;
+    width :70%;
+    padding-left:5.375em;
+    padding-left:27%;
+    margin-right:0;
+    position: absolute;
+    padding-top: 30px;
+ }
+ header div{
+  display: initial;
+    float: left;
+   padding-left:5%; 
+ }
+
+ 
+ /* site navigation bar */
+
+ nav.sitenavigation {
+    background-color: black;
+    overflow: auto;   
+ }
+ nav.sitenavigation ul {
+
+  text-align: center;
+  display: inline;
+}
+nav.sitenavigation li {
+  margin: 0.2em 0.6em;
+  display: inline-block;
+}
+.navigation-menu-button{
+  display: none;
+}
+  article{
+    width:60%;
+    margin-right:25px;
+  }
+  article img{
+    display: none;
+  }
+ aside{
+  display: initial;
+ }
+ aside p {
+  margin-top:1em;
+ }
+ nav.sitenavigation {
+  background-color: black;
+  overflow: auto;   
+  width: 100%;
+  position: relative;
+}
+nav.sitenavigation ul {
+  width: 74%;
+  float: right;
+  text-align: center;
+}
+nav.sitenavigation li {
+  margin: 0.2em 0.6em;
+  display: inline-block;
+}
+@media screen and (min-width:1100px) {  /*3*/
+
+ article{
+   width: 60%;
+   display: inline-block;
+ }
+  article img{
+    display: initial;
+    clear: left;
+    padding-left: 20px;
+    height: auto;
+    width: 50%;
+    padding-top:-400px;
+  }
+  .navigation-menu-button{
+    display: none;
+  }
+.words{
+  padding-bottom:0;
+   width:45%;
+   margin-right:0;
+   float: left;
+}
+   aside p{
+   padding-right:3.125em;
+   }
+}
+@media screen and (min-width:1400px){
+  body{
+    width: 85em;
+    margin:auto;
+  }
+ 
+}
+
+}
+@page {
+   margin: 0.75in;
+}
 
 
