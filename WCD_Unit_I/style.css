@@ -1,4 +1,4 @@
-﻿/* 
+/* 
    Revisions Bookstore and Cafe style sheet 
    Filename: styles.css
 
@@ -264,6 +264,7 @@ nav.sitenavigation li {
     padding-left: 20px;
     height: auto;
     width: 50%;
+    padding-top:-400px;
   }
   .navigation-menu-button{
     display: none;
@@ -290,3 +291,4 @@ nav.sitenavigation li {
 @page {
    margin: 0.75in;
 }
+
